@@ -12,7 +12,7 @@ const reg = async (req, res) =>{
             mobile: req.body.mobile,
     })
 
-    //const token = await registerStudent.generateAuthToken();
+   
    // console.log("the token part" + token);
     registerStudent.save()
     .then(result => {
