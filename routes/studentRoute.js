@@ -10,5 +10,3 @@ router.post('/reg',StudentController.reg)
 router.post('/update/:id',auth, StudentController.updateinfo)
 router.get('/display',auth,StudentController.studentlist) //here we use middleware 'auth'
 module.exports = router
-
-//commit first
