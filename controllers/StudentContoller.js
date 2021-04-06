@@ -12,7 +12,7 @@ const reg = async (req, res) =>{
             mobile: req.body.mobile,
     })
 
-   
+   //jwt
    // console.log("the token part" + token);
     registerStudent.save()
     .then(result => {
