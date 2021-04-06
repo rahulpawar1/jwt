@@ -37,7 +37,6 @@ const updateinfo = (req, res, next) => { //here middleware get token verify get 
     const studentData = req.userData;
     const studenId = studentData.result._id; // got data in that select id of that user for updating purpose
 
-   // var id = req.params.id;
 
     Student.findOne({_id : studenId}, function(err, foundObject){
         if(err){
